@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    image: marwang12/backend-tp:v1.0
+    ports:
+      - "5000:5000"
+    networks:
+      - mynetwork
+
+  frontend:
+    build:
+      context: ./frontend
+    image: marwang12/frontend-tp:v1.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
