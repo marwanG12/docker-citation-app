@@ -16,8 +16,8 @@ Lancer l'application avec Docker
 
 1 Cloner ce dépôt
 
-git clone https://github.com/votre-utilisateur/citation-app.git
-cd citation-app
+git clone https://github.com/marwanG12/docker-citation-app.git
+cd docker-citation-app
 
 2 Lancer Docker Compose
 
